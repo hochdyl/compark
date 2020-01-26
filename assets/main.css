@@ -1,0 +1,461 @@
+/* EXTRA */
+@font-face {
+	font-family: 'Raleway';
+	src: url('../font/Raleway-Regular.ttf');
+}
+
+
+/* ====================================================================================================== */
+
+* {
+    font-family: Raleway;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{text-decoration: underline;}
+
+input[type=submit]:hover{cursor: pointer;}
+
+label {
+    user-select: none;
+}
+
+.spc-bot {
+    margin-bottom: 10px;
+}
+
+.spc-top {
+    margin-top: 10px;
+}
+
+.center {
+    text-align: center;
+}
+
+.fas {
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.count {
+    color: #ffffff;
+    font-weight: 100;
+    font-family: arial;
+    padding: 0 0 0 20px;
+    font-size: 30px;
+}
+
+.box-label {
+    letter-spacing: 3px;
+    padding: 20px 0 20px 0;
+    color: white;
+    background-color: #000000;
+}
+
+.ligne {
+    position: relative;
+    width: 100%;
+    line-height: 50px;
+    background-color: #777777;
+    border-bottom: solid 2px #ffffff;
+}
+
+.ligne:last-child  {border-bottom: none;}
+
+.ligne:hover {background-color: #555555; transition: 0.2s;}
+
+.error {
+    letter-spacing: 3px;
+    background-color: rgba(150, 0, 0);
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+.summary-box {
+    z-index: -1;
+    padding: 10px;
+    background-color: #111111;
+    position: absolute;
+    top: -50px;
+    left: 0;
+}
+
+.search-bar {
+    padding: 10px;
+    background-color: #111111;
+    position: absolute;
+    top: -50px;
+    right: 0;
+    color: #ffffff;
+    border: none;
+    width: 250px;
+    height: 30px;
+}
+
+.search-bar:focus {outline: none; background-color: #333333; transition: 0.3s;}
+
+header {
+    width: 100%;
+    background-color: black;
+    height: 80px;
+}
+
+.vertical-align {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+#logo-head {
+    padding: 10px;
+    max-height: 60px;
+    vertical-align: middle;
+}
+
+.wrapper {
+    display: flex;  
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center;
+}
+
+.wrapper > * {
+    flex: 1 100%;
+}
+
+.main {
+    position: relative; 
+    margin: 70px 50px 50px 50px;
+    text-align: left;
+}
+
+.contain-overflow {
+    position: relative;
+    overflow: auto;
+    max-height: 400px;
+}
+
+.contain-overflow::-webkit-scrollbar {
+    width: 5px;
+    background-color: #777777; /* or add it to the track */
+}
+/* Add a thumb */
+.contain-overflow::-webkit-scrollbar-thumb {
+    background: #ffffff; 
+    height: 5px;
+}
+
+.form-box {
+    box-sizing: content-box;
+}
+
+.insert-input {
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #111111;
+    color: #ffffff;
+    border: none;
+    width: 80%;
+    height: 50px;
+}
+
+.insert-input:focus {outline: none; background-color: #333333; transition: 0.3s;}
+
+.insert-submit {
+    background-color: #000000;
+    box-sizing: border-box;
+    float: right;
+    height: 100px;
+    width: 20%;
+    font-size: 80px;
+    border: none;
+    color: #ffffff;
+}
+
+.insert-submit:hover {background-color: #333333; transition: 0.3s; cursor: pointer;}
+
+@media all and (min-width: 1000px) {
+    .main    { flex: 3 0px; }
+}
+
+.item-name {
+    padding-left: 10px;
+    vertical-align: middle;
+}
+
+.delete-checkbox,.insert-checkbox {
+    transform: scale(2);
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    float: right;
+}
+
+.update-input {
+    color: #000000;
+    font-size: 25px;
+    position: absolute;
+    top: 11px;
+    right: 50px;
+    float: right;
+    font-size: 26px;
+}
+
+.update-input:hover {color: #ffffff; transition: 0.3s; cursor: pointer;}
+
+.sync-input {
+    position: absolute;
+    font-size: 25px;
+    top: 15px;
+    right: 70px;
+    right: 70px;
+    float: right;
+}
+
+.sync-input:hover {color: #777777; transition: 0.3s; cursor: pointer;}
+
+.delete-input {
+    position: absolute;
+    font-size: 25px;
+    top: 15px;
+    right: 17px;
+    float: right;
+}
+
+.delete-input:hover {color: #777777; transition: 0.3s; cursor: pointer;}
+
+.checkall-input {
+    position: absolute;
+    font-size: 25px;
+    top: 15px;
+    right: 17px;
+    float: right;
+}
+
+.checkall-input:hover {color: #777777; transition: 0.3s; cursor: pointer;}
+
+.main-login {
+    margin-top: 100px;
+    position: relative;
+}
+
+.logo-login {
+    width: 375px;
+}
+
+.login-box {
+    margin: 40px auto 0 auto;
+    width: 500px;
+}
+
+.connexion-input {
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    background-color: rgba(100,100,100,0.5);
+    border: none;
+    color: white;
+}
+
+.connexion-input:focus {outline: none;}
+
+.connexion-input[type=submit] {
+    margin-top: 50px;
+    font-weight: normal;
+}
+
+/* POP UP */ /* POP UP */ /* POP UP */ /* POP UP */ /* POP UP */ /* POP UP */ /* POP UP */ /* POP UP */ /* POP UP */ /* POP UP */ /* POP UP */ /* POP UP */ /* POP UP */ /* POP UP */ /* POP UP */ /* POP UP */ /* POP UP */ /* POP UP */ /* POP UP */ /* POP UP */ /* POP UP */ /* POP UP */ /* POP UP */ /* POP UP */ /* POP UP */
+
+.pop-up-update {
+    position: fixed;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 50%;
+    padding: 20px;
+    background-color: #ffffff;
+    z-index: 1000;
+    border: solid 5px #000000;
+    top: 100px;
+}
+
+.contain-overflow-pop-up {
+    position: relative;
+    overflow: auto;
+    max-height: 250px;
+}
+
+.contain-overflow-pop-up::-webkit-scrollbar {
+    width: 5px;
+    background-color: #777777; /* or add it to the track */
+}
+/* Add a thumb */
+.contain-overflow-pop-up::-webkit-scrollbar-thumb {
+    background: #ffffff; 
+    height: 5px;
+}
+
+.pop-up-overlay-update {
+    position: fixed;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 100%;
+    opacity: 0.7;
+    top: 0px;
+    margin: 0px;
+    min-height: 200px;
+    height: 100%;
+    background-color: #000;
+    transition: unset; -webkit-transition: unset;
+    z-index: 999;
+}
+
+.pop-up-content {
+    color: #FFFFFF;
+    font-size: 30px;
+}
+
+.pop-up-close {
+    background-color: rgba(0,0,0,1);
+    right: -15px;
+    top: -15px;
+    border-radius: 100%;
+    position: absolute;
+    float: right;
+    width: 30px;
+    height: 30px;
+    color: #ffffff;
+    border: none;
+    font-weight: bold;
+}
+
+.pop-up-close:focus {outline: none;}
+
+.pop-up-close:hover {
+    cursor: pointer;
+    background: rgba(150, 0, 0, 1);
+    transition: 0.2s;
+    font-weight: bold;
+}
+
+.update-text {
+    box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    background-color: #111111;
+    color: #ffffff;
+    border: none;
+}
+
+.update-text:focus {outline: none; background-color: #333333; transition: 0.3s;}
+
+.update-submit,.delete-submit,.insert-linked-submit {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+}
+
+.update-submit:hover {background-color: #333333; transition: 0.3s;}
+
+.update-submit:focus {outline: none;}
+
+.pop-up-info {
+    position: fixed;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 25%;
+    padding: 20px;
+    background-color: #ffffff;
+    z-index: 1000;
+    border: solid 5px #000000;  
+    text-transform: uppercase;
+    top: 100px;
+}
+
+/* CHECKBOX CSS */ /* CHECKBOX CSS */ /* CHECKBOX CSS */ /* CHECKBOX CSS */ /* CHECKBOX CSS */ /* CHECKBOX CSS */ /* CHECKBOX CSS */ /* CHECKBOX CSS */ /* CHECKBOX CSS */ /* CHECKBOX CSS */ /* CHECKBOX CSS */ /* CHECKBOX CSS */ /* CHECKBOX CSS */ /* CHECKBOX CSS */ /* CHECKBOX CSS */ /* CHECKBOX CSS */
+
+input[type="checkbox"].switch_1{
+	font-size: 30px;
+	-webkit-appearance: none;
+	   -moz-appearance: none;
+	        appearance: none;
+	width: 1.8em;
+	height: 0.8em;
+	background: rgba(180,0,0);
+	border-radius: 3em;
+	position: absolute;
+    top: 13px;
+    right: 50px;
+	cursor: pointer;
+	outline: none;
+	-webkit-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+  }
+  
+  input[type="checkbox"].switch_1:checked{
+	background: rgba(0,180,0);
+  }
+  
+  input[type="checkbox"].switch_1:after{
+	position: absolute;
+	content: "";
+	width: 0.8em;
+	height: 0.8em;
+	border-radius: 50%;
+	background: #fff;
+	-webkit-box-shadow: 0 0 .25em rgba(0,0,0,.3);
+	        box-shadow: 0 0 .25em rgba(0,0,0,.3);
+	-webkit-transform: scale(.7);
+	        transform: scale(.7);
+	left: 0;
+	-webkit-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+  }
+  
+    input[type="checkbox"].switch_1:checked:after{
+	left: calc(100% - 0.8em);
+  }
+
+/* ANIMATION CSS */ /* ANIMATION CSS */ /* ANIMATION CSS */ /* ANIMATION CSS */ /* ANIMATION CSS */ /* ANIMATION CSS */ /* ANIMATION CSS */ /* ANIMATION CSS */ /* ANIMATION CSS */ /* ANIMATION CSS */ /* ANIMATION CSS */ /* ANIMATION CSS */ /* ANIMATION CSS */ /* ANIMATION CSS */ /* ANIMATION CSS */ /* ANIMATION CSS */ 
+
+.delete-input.shake {
+  animation: shake 0.2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -1px) rotate(-1deg); }
+  20% { transform: translate(-2px, 0px) rotate(1deg); }
+  30% { transform: translate(2px, 1px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 1px) rotate(-1deg); }
+  60% { transform: translate(-2px, 1px) rotate(0deg); }
+  70% { transform: translate(2px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
